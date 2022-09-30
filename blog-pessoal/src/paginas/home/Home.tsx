@@ -17,7 +17,7 @@ function Home() {
           <img
             src="https://i.imgur.com/wUf1NUF.png"
             alt=""
-            className="imagem"
+            className="image"
           />
           <Box display="flex" justifyContent="center" p={2}>
             <Button variant="contained" color="primary">
