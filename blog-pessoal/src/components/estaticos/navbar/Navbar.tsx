@@ -1,54 +1,54 @@
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
-import { Box } from '@mui/material';
-import {Link} from 'react-router-dom';
-import './Navbar.css';
+import { AppBar, Toolbar, Box, Typography, Grid } from '@mui/material';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css'
 
 function Navbar() {
   return (
     <>
-      <AppBar position="static">
-        <Toolbar
-          variant="dense"
-          style={{ display: 'flex', justifyContent: 'space-between' }}
-        >
-          <Box className='cursor'>
+      <AppBar className='barra' position="static">
+        <Toolbar variant="dense">
+          <Box className="cursor">
             <Typography variant="h5" color="inherit">
-              BlogPessoal
+              WEST
             </Typography>
           </Box>
 
-          <Box display="flex" justifyContent="flex-end">
-            <Box mx={1} className='cursor'>
-              <Typography variant="h6" color="inherit">
-                home
-              </Typography>
-            </Box>
-            <Box mx={1} className='cursor'>
-              <Typography variant="h6" color="inherit">
-                postagens
-              </Typography>
-            </Box>
-            <Box mx={1} className='cursor'>
-              <Typography variant="h6" color="inherit">
-                temas
-              </Typography>
-            </Box>
-            <Box mx={1} className='cursor'>
-              <Typography variant="h6" color="inherit">
-                cadastrar tema
-              </Typography>
-            </Box>
+          <Grid container justifyContent="flex-end">
+            <Box display="flex" justifyContent="start">
+              <Box mx={1} className="cursor">
+                <Typography variant="h6" color="inherit">
+                  Home
+                </Typography>
+              </Box>
 
-            <Link to='/login' className="text-decorator-none">
-                <Box mx={1} className='cursor'>
-                  <Typography variant="h6" color="inherit">
-                    logout
-                  </Typography>
-                </Box>
-            </Link>
+              <Box mx={1} className="cursor">
+                <Typography variant="h6" color="inherit">
+                  Postagens
+                </Typography>
+              </Box>
 
-          </Box>
+              <Box mx={1} className="cursor">
+                <Typography variant="h6" color="inherit">
+                  Temas
+                </Typography>
+              </Box>
+
+              <Box mx={1} className="cursor">
+                <Typography variant="h6" color="inherit">
+                  Cadastrar Temas
+                </Typography>
+              </Box>
+
+                <Link to='/login' className='logout'>
+                  <Box mx={1} className="cursor">
+                      <Typography variant="h6" color="inherit">
+                        Logout
+                      </Typography>
+                  </Box>
+                </Link>
+            </Box>
+          </Grid>
         </Toolbar>
       </AppBar>
     </>

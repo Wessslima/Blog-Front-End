@@ -1,16 +1,7 @@
-
-.bg-login{
+.bg-cadastro {
     min-height: 100vh;
     background-image: url('/src/assets/W-AZUL.png');
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  .text-decoration-none {
-    text-decoration: none;
-  }
-
-  .negrito{
-    font-weight: bold !important;
   }

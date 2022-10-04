@@ -1,12 +1,8 @@
-.cursor{
-    cursor: pointer;
-    color: white;
-}
-
-.text-decorator-none{
+.logout {
     text-decoration: none;
 }
 
-h6{
-    display: inline;
+.cursor{
+    cursor: pointer;
+    color: white;
 }

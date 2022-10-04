@@ -2,11 +2,8 @@ import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import './Footer.css';
 
-// import purple from '@material-ui/core/colors/purple';
-
-// const roxin = purple[500];
+import './Footer.css'
 
 function Footer() {
   return (
@@ -29,7 +26,7 @@ function Footer() {
                 variant="h5"
                 align="center"
                 gutterBottom
-                className='textos'
+                className='branco'
               >
                 Siga-me nas redes sociais{' '}
               </Typography>
@@ -39,13 +36,13 @@ function Footer() {
                 href="https://www.instagram.com/oeste.prado/"
                 target="_blank"
               >
-                <InstagramIcon className='redes'/>
+                <InstagramIcon className='redes' />
               </a>
               <a
                 href="https://www.linkedin.com/in/wessslima/"
                 target="_blank"
               >
-                <LinkedInIcon className='redes'/>
+                <LinkedInIcon className='redes' />
               </a>
             </Box>
           </Box>
@@ -55,7 +52,7 @@ function Footer() {
                 variant="subtitle2"
                 align="center"
                 gutterBottom
-                className='textos'
+                className='branco'
               >
                 © 2022 Copyright
               </Typography>
@@ -65,10 +62,10 @@ function Footer() {
                 <Typography
                   variant="subtitle2"
                   gutterBottom
-                  className='textos'
+                  className='branco'
                   align="center"
                 >
-                 WEST
+                  WEST
                 </Typography>
               </a>
             </Box>

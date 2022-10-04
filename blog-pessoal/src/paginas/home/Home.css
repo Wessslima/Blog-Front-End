@@ -1,7 +1,6 @@
-  
-  .image{
-    width: 500px;
-    height: 500px;
-    display: block;
-    margin: 0 auto;
-  }
+.logo{
+  background-image: url("/src/assets/Logo-West.png");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,18 +1,24 @@
+.cor {
+    background-color: azure !important;
+}
+
+
+.branco{
+    color: white;
+}
+
+
 .box1{
-    background-color: rgb(179, 23, 132);
+    background-color: #303F9F;
     height: '120px';
+}
+
+.box2{
+    background-color: #000000;
+    height: '60px';
 }
 
 .redes{
     font-Size: 60px !important;
-    color:white;
-}
-
-.box2{
-    background-color: #303F9F;
-    height: '60px';
-}
-
-.textos{
     color:white;
 }
