@@ -2,7 +2,7 @@ import axios from "axios";
 import { url } from "inspector";
 
 export const api = axios.create({
-    baseURL: ' https://blogpessoalbackendgen.herokuapp.com/'
+    baseURL: 'https://blogpessoal-hydi.onrender.com/'
 })
 
 export const login = async(url: any, dados: any, setDado: any) => {
