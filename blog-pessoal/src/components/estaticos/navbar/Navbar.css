@@ -6,3 +6,7 @@
     cursor: pointer;
     color: white;
 }
+
+.navbar{
+    background: linear-gradient(236deg, #2e2633 5%, #7e469e 20%, #2a1438 70%);
+}

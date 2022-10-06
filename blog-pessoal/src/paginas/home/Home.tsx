@@ -40,7 +40,7 @@ function Home() {
 
                 <Box marginRight={1}>
 
-                <Button type="submit" variant='outlined' color="secondary">
+                <Button type="submit" variant='outlined' color="primary" className='bt-azul'>
                   Ver Postagens
                 </Button>
 
