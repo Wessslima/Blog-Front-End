@@ -6,8 +6,9 @@ import './Navbar.css'
 function Navbar() {
   return (
     <>
-      <AppBar className='barra' position="static">
+      <AppBar position="static">
         <Toolbar variant="dense">
+
           <Box className="cursor">
             <Typography variant="h5" color="inherit">
               WEST
@@ -16,6 +17,7 @@ function Navbar() {
 
           <Grid container justifyContent="flex-end">
             <Box display="flex" justifyContent="start">
+
               <Box mx={1} className="cursor">
                 <Typography variant="h6" color="inherit">
                   Home
@@ -47,6 +49,7 @@ function Navbar() {
                       </Typography>
                   </Box>
                 </Link>
+
             </Box>
           </Grid>
         </Toolbar>

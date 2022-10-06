@@ -90,13 +90,26 @@ function Login() {
             </form>
 
             <Box display="flex" justifyContent='center' marginTop={2}>
-            <Box marginRight={1}>
-              <Typography variant='subtitle1'>Ainda não tem uma conta?</Typography>
+
+                <Box marginRight={1}>
+
+                  <Typography 
+                    variant='subtitle1'>Ainda não tem uma conta?
+                  </Typography>
+
+                </Box>
+
+                <Link to='/cadastro' className='cadastre'>
+                  <Typography 
+                    className='negrito' 
+                    color='primary' 
+                    variant='subtitle1' 
+                    align='center'>Cadastre-se
+                  </Typography>
+                </Link>
+
             </Box>
-              <Link to='/cadastro' className='text-decoration-none'>
-                <Typography className='negrito' color='primary' variant='subtitle1' align='center'>Cadastre-se</Typography>
-              </Link>
-            </Box>
+
           </Box>
         </Grid>
 

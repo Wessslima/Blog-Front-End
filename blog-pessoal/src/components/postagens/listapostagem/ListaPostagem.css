@@ -1,8 +1,8 @@
-.text-decorator-none{
+.atualizar-Posts{
     text-decoration: none;
 }
 
-.delete{
-    margin-left: 1rem;
+.deletar-Posts{
+    margin-left: 1.5rem;
     text-decoration: none;
 }

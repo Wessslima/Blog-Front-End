@@ -11,8 +11,8 @@ import Login from './paginas/login/Login';
 function App() {
   return (
     <BrowserRouter>
-      
-        <Navbar />
+
+      <Navbar />
 
         <div style={{minHeight: '100vh'}}>
 
@@ -34,7 +34,7 @@ function App() {
 
         </div>
         
-        <Footer />
+      <Footer />
       
     </BrowserRouter>
   );

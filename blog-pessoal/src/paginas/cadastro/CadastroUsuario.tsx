@@ -57,7 +57,9 @@ function CadastroUsuario() {
   return (
     <>
       <Grid container alignItems='center' justifyContent='center'>
+
         <Grid item xs={6} className='bg-cadastro'></Grid>
+
         <Grid container xs={6} justifyContent='center'>
           
           <Grid item xs={8} justifyContent='center'>
@@ -116,16 +118,21 @@ function CadastroUsuario() {
               />
 
               <Box display='flex' justifyContent='space-around' marginTop={2}>
-                <Link to='/login' className='text-decoration-none'>
+
+                <Link to='/login' className='cancelar'>
                   <Button variant="contained" color="secondary">
                     Cancelar
                   </Button>
                 </Link>
+
                   <Button type="submit" variant="contained" color="primary">
                     Cadastrar
                   </Button>
+
               </Box>
             </form>
+
+            
           </Grid>
           
         </Grid>

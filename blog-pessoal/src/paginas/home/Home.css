@@ -1,6 +1,17 @@
+.bg-Home{
+  background-color: black;
+}
+
+
 .logo{
   background-image: url("/src/assets/Logo-West.png");
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.welcome{
+  color: white !important;
+  font-weight: bold !important;
+  align-items: center;
 }

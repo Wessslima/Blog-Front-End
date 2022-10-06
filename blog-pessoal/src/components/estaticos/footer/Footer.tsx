@@ -28,7 +28,7 @@ function Footer() {
                 gutterBottom
                 className='branco'
               >
-                Siga-me nas redes sociais{' '}
+                Siga-me nas redes sociais
               </Typography>
             </Box>
             <Box display="flex" alignItems="center" justifyContent="center">
@@ -54,20 +54,8 @@ function Footer() {
                 gutterBottom
                 className='branco'
               >
-                © 2022 Copyright
+                © 2022 Copyright | WEST
               </Typography>
-            </Box>
-            <Box>
-              <a target="_blank" href="https://github.com/Wessslima">
-                <Typography
-                  variant="subtitle2"
-                  gutterBottom
-                  className='branco'
-                  align="center"
-                >
-                  WEST
-                </Typography>
-              </a>
             </Box>
           </Box>
         </Grid>

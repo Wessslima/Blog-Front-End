@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Box, Card, CardActions, CardContent, Button, Typography } from "@material-ui/core";
+import { Box, Card, CardActions, CardContent, Button, Typography } from "@mui/material";
 import './ListaPostagem.css';
 
 function ListaPostagem() {
@@ -35,15 +35,15 @@ function ListaPostagem() {
 
                     <CardActions>
 
-                        <Box>
+                        <Box display='flex' justifyContent='center' mb={1.5}>
 
-                            <Link to='' className='text-decorator-none'>
+                            <Link to='' className='atualizar-Posts'>
                                     <Button variant='contained' size='small' color='primary'>
                                         Atualizar
                                     </Button>
                             </Link>
 
-                            <Link to='' className='delete'>
+                            <Link to='' className='deletar-Posts'>
                                     <Button variant='contained' size='small' color='secondary'>
                                         Deletar
                                     </Button>
