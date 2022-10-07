@@ -1,7 +1,7 @@
 
 .bg-login{
     min-height: 100vh;
-    background-image: url('/src/assets/Logo-West.png');
+    background-image: url('/src/assets/Logo-W.png');
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,13 +9,23 @@
   
   .cadastre{
     text-decoration: none;
-    color: rgb(72, 12, 128);
+    color: rgb(80, 12, 143);
   }
 
   .negrito{
     font-weight: bold !important;
   }
 
-  .entrar{
-    background-color: rgb(72, 12, 128) !important;
+  .entrar:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px rgba(23,209,255,0.8);
+  }
+
+  .ainda{
+    color: white;
+  }
+
+  .textfield{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 2px rgb(80, 12, 143);
   }

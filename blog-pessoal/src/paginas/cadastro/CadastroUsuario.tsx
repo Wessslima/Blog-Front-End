@@ -67,65 +67,70 @@ function CadastroUsuario() {
               <Typography className='cadastro' align='center' variant='h2'>Cadastre-se</Typography>
 
               <TextField
+              className='textfield2'
               value={user.nome}
               onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)}
                 id="nome"
                 label="Nome completo"
-                variant="outlined"
+                variant="filled"
                 fullWidth
                 margin="normal"
                 name='nome'
               />
               <TextField
+              className='textfield2'
               value={user.usuario}
               onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)}
                 id="usuario"
                 label="Usuário (email)"
-                variant="outlined"
+                variant="filled"
                 fullWidth
                 margin="normal"
                 name='usuario'
               />
               <TextField
+              className='textfield2'
                 id="foto"
                 label="Foto (url)"
-                variant="outlined"
+                variant="filled"
                 fullWidth
                 margin="normal"
                 name='foto'
               />
               <TextField
+              className='textfield2'
               value={user.senha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)}
                 id="senha"
                 label="Senha"
-                variant="outlined"
+                variant="filled"
                 fullWidth
                 type='password'
                 margin="normal"
                 name='senha'
               />
               <TextField
+              className='textfield2'
               value={confirmarSenha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)}
                 id="confirmarSenha"
                 label="Confirmar senha"
-                variant="outlined"
+                variant="filled"
                 fullWidth
                 type='password'
                 margin="normal"
                 name='confirmarSenha'
               />
 
-              <Box display='flex' justifyContent='space-around' marginTop={2}>
+              <Box display='flex' justifyContent='space-around' marginTop={4}>
 
                 <Link to='/login' className='cancelar'>
-                  <Button variant="contained" color="secondary">
+                  <Button variant="outlined" color="secondary">
                     Cancelar
                   </Button>
                 </Link>
 
-                  <Button type="submit" variant="contained" color="primary">
+                  <Button className='botaoCadastrar' type="submit" variant="outlined" color="primary">
                     Cadastrar
                   </Button>
 

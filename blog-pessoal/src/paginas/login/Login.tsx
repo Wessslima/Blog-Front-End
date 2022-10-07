@@ -62,39 +62,41 @@ function Login() {
               <Typography className='cadastre' variant="h2" align='center'>Sign in</Typography>
 
               <TextField
+              className='textfield'
               value={userLogin.usuario}
               onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)}
                 id="usuario"
                 label="Usuario"
-                variant="outlined"
+                variant="filled"
                 fullWidth
                 margin="normal"
                 name='usuario'
               />
               <TextField
+              className='textfield'
               value={userLogin.senha}
               onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)}
                 id="senha"
                 label="Senha"
-                variant="outlined"
+                variant="filled"
                 fullWidth
                 margin="normal"
                 name='senha'
                 type='password'
               />
-              <Box display='flex' justifyContent='center' marginTop={2}>
-                  <Button className='entrar' type="submit" variant="contained" color="secondary">
+              <Box display='flex' justifyContent='center' marginTop={3}>
+                  <Button className='entrar' type="submit" variant="outlined" color="primary">
                     Entrar
                   </Button>
               </Box>
             </form>
 
-            <Box display="flex" justifyContent='center' marginTop={2}>
+            <Box display="flex" justifyContent='center' marginTop={3}>
 
                 <Box marginRight={1}>
 
                   <Typography 
-                    variant='subtitle1'>Ainda não tem uma conta?
+                  className='ainda' variant='subtitle1'>Ainda não tem uma conta?
                   </Typography>
 
                 </Box>
