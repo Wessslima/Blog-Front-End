@@ -1,12 +1,9 @@
-.logout {
-    text-decoration: none;
-}
-
 .cursor{
     cursor: pointer;
     color: white;
+    text-decoration: none;
 }
 
 .navbar{
-    background: linear-gradient(236deg, #2e2633 5%, #7e469e 20%, #2a1438 70%);
+    background-color: linear-gradient(236deg, #2e2633 5%, #7e469e 20%, #2a1438 70%);
 }

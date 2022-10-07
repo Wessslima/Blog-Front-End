@@ -1,11 +1,44 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Box, Card, CardActions, CardContent, Button, Typography } from "@mui/material";
 import './ListaTema.css';
+import Tema from '../../../model/Tema';
+import useLocalStorage from 'react-use-localstorage';
+import { busca } from '../../../service/Service';
 
 function ListaTema() {
+
+    let navigate = useNavigate()
+    const [temas, setTemas] = useState<Tema[]> ([])
+    const [token, setToken] = useLocalStorage('token')
+
+    useEffect(() => {
+        if(token == '') {
+            alert('Faça o Login Primeiro')
+            navigate('/login')
+        }
+    }, [token])
+
+
+    async function getTema() {
+        await busca('/tema', setTemas,{
+            headers:{
+                'Authorization': token
+            }
+        })
+    }
+
+    useEffect(() => {
+        getTema()
+    }, [temas.length])
+    
+    
+
     return (
         <>
+
+        {
+            temas.map(tema =>(
 
             <Box m={2} >
 
@@ -18,7 +51,7 @@ function ListaTema() {
                         </Typography>
 
                         <Typography variant='h5' component='h2'>
-                            Minha Descrição
+                            {tema.descricao}
                         </Typography>
 
                     </CardContent>
@@ -28,13 +61,13 @@ function ListaTema() {
                     <CardActions>
 
                         <Box display='flex' justifyContent='center' mb={1.5}>
-                            <Link to='' className='atualizar-Tema'>
+                            <Link to={`formularioTema/${tema.id}`} className='atualizar-Tema'>
                                     <Button variant='contained' size='small' color='primary'>
                                         Atualizar
                                     </Button>
                             </Link>
 
-                            <Link to='' className='deletar-Tema'>
+                            <Link to={`deletarTema/${tema.id}`} className='deletar-Tema'>
                                     <Button variant='contained' size='small' color='secondary'>
                                         Deletar
                                     </Button>
@@ -45,6 +78,10 @@ function ListaTema() {
                     </CardActions>
                 </Card>
             </Box>
+
+        ))
+
+        }
 
         </>
     );
