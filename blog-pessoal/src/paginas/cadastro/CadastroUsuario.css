@@ -1,6 +1,6 @@
 .bg-cadastro {
     min-height: 100vh;
-    background-image: url('/src/assets/W-AZUL.png');
+    background-image: url('/src/assets/Logo-West.png');
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,4 +8,8 @@
 
   .cancelar{
     text-decoration: none;
+  }
+
+  .cadastro{
+    color: rgb(72, 12, 128);
   }

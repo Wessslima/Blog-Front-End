@@ -64,7 +64,7 @@ function CadastroUsuario() {
           
           <Grid item xs={8} justifyContent='center'>
             <form onSubmit={onSubmit}>
-              <Typography align='center' color='primary' variant='h2'>Cadastre-se</Typography>
+              <Typography className='cadastro' align='center' variant='h2'>Cadastre-se</Typography>
 
               <TextField
               value={user.nome}

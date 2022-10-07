@@ -59,7 +59,7 @@ function Login() {
         <Grid item xs={6} alignItems="center" justifyContent="center">
           <Box paddingX={20}>
             <form onSubmit={onSubmit}>
-              <Typography color='primary' variant="h2" align='center'>Sign in</Typography>
+              <Typography className='cadastre' variant="h2" align='center'>Sign in</Typography>
 
               <TextField
               value={userLogin.usuario}
@@ -83,7 +83,7 @@ function Login() {
                 type='password'
               />
               <Box display='flex' justifyContent='center' marginTop={2}>
-                  <Button type="submit" variant="contained" color="primary">
+                  <Button className='entrar' type="submit" variant="contained" color="secondary">
                     Entrar
                   </Button>
               </Box>
@@ -102,7 +102,6 @@ function Login() {
                 <Link to='/cadastro' className='cadastre'>
                   <Typography 
                     className='negrito' 
-                    color='primary' 
                     variant='subtitle1' 
                     align='center'>Cadastre-se
                   </Typography>
