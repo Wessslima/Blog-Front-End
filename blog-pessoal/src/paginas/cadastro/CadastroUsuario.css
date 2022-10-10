@@ -1,29 +1,29 @@
-.bg-cadastro {
-    min-height: 100vh;
-    background-image: url('/src/assets/W-AZUL.png');
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .cadastro{
-    color: rgb(42, 29, 228);
-  }
+.imagem2{
+  background-image: url(/src/assets/W-AZUL.png);
+  background-repeat: no-repeat;
+  width: 100vh;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 
 
-  .cancelar{
-    text-decoration: none;
-  }
-  .cancelar:hover{
-    box-shadow: 0px 0px 10px 4px rgba(255, 0, 179, 0.8);
-  }
+.signUp{
+  color: rgb(42, 29, 228) !important;
+}
 
-  .botaoCadastrar:hover{
-    box-shadow: 0px 0px 10px 4px rgba(23,209,255,0.8);
-  }
+.bt-Cancelar{
+  color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 0px 10px 4px rgba(255, 0, 255, 0.8);
+}
+
+.bt-Cadastrar{
+  color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 0px 10px 4px rgba(23,209,255,0.8);
+}
 
 
-  .textfield2{
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 2px rgba(23,209,255,0.8);
-  }
+.bg-Form2{
+  background-color: rgb(165, 138, 170);
+  box-shadow: 0px 0px 10px 2px rgba(23,209,255,0.8);
+}

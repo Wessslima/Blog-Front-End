@@ -1,8 +1,3 @@
-.branco{
-    color: white;
-}
-
-
 .box1{
     background: linear-gradient(236deg, #552472 30%, #000000 120%);
     height: '120px';
@@ -10,10 +5,13 @@
 
 .box2{
     background-color: #000000;
-    text-decoration: none;
 }
 
 .redes{
-    font-Size: 60px !important;
+    font-size: 60px !important;
+    color: white;
+}
+
+.textos{
     color:white;
 }

@@ -1,5 +1,10 @@
+.titulo{
+    font-weight: bold;
+}
+
 .sobre{
     color: white !important;
+    text-align: center !important;
 }
 
 .tbPostagem{

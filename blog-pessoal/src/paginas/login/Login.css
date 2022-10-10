@@ -1,31 +1,35 @@
+.imagem{
+  background-image: url(/src/assets/W-AZUL.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
 
-.bg-login{
-    min-height: 100vh;
-    background-image: url('/src/assets/W-AZUL.png');
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .cadastre{
-    text-decoration: none;
-    color: rgb(42, 29, 228);
-  }
 
-  .negrito{
-    font-weight: bold !important;
-  }
+.signIn{
+  color: rgb(42, 29, 228) !important;
+}
 
-  .entrar:hover{
-    color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 2px rgba(23,209,255,0.8);
-  }
 
-  .ainda{
-    color: white;
-  }
+.ainda{
+  color: white;
+}
 
-  .textfield{
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 2px rgba(23,209,255,0.8);
-  }
+.clique{
+  color: rgb(42, 29, 228);
+  font-weight: bold !important;
+}
+
+
+.entrar{
+  color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 0px 10px 2px rgba(23,209,255,0.8);
+}
+
+
+.bg-Form{
+  background-color: rgb(165, 138, 170);
+  box-shadow: 0px 0px 10px 2px rgba(23,209,255,0.8);
+}
