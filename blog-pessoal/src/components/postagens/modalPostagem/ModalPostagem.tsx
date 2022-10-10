@@ -48,7 +48,7 @@ function ModalPostagem () {
     
     <div style={modalStyle} className={classes.paper}>
 
-      <Box display="flex" justifyContent="flex-end" className="cursor">
+      <Box display="flex" justifyContent="flex-end" color='inherit' className="cursor">
         <CloseIcon onClick={handleClose}/>
       </Box>
       
