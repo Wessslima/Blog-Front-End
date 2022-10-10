@@ -38,9 +38,9 @@ function ListaPostagem() {
       {
         posts.map(post => (
 
-          <Box m={2} key={post.id}>
+          <Box m={2} key={post.id} display="flex" flexWrap="wrap" justifyContent="center">
 
-            <Card variant="outlined">
+            <Card variant="outlined" className='margin'>
 
               <CardContent>
 

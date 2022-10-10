@@ -5,6 +5,7 @@ import './CadastroTema.css';
 import useLocalStorage from 'react-use-localstorage';
 import Tema from '../../../model/Tema';
 import { buscaId, post, put } from '../../../service/Service';
+import { Box } from '@material-ui/core';
 
 
 function CadastroTema() {
@@ -84,26 +85,27 @@ function CadastroTema() {
             <form onSubmit={onSubmit}>
 
                 <Typography 
+                className='cadastrarTema'
                 variant="h3" 
                 color="textSecondary" 
                 component="h1" 
-                align="center" >Formulário de cadastro tema
+                align="center" >Cadastrar Tema
                 </Typography>
 
 
                 <TextField 
+                className='bg-FormTema'
                 value={tema.descricao} 
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} 
                 id="descricao" 
-                label="descricao" 
+                label="Insira um Tema" 
                 variant="outlined" 
                 name="descricao" 
                 margin="normal" 
                 fullWidth />
 
-
-                <Button type="submit" variant="contained" color="primary">
-                    Finalizar
+                <Button className='bt-Finalizar' color='secondary' type="submit" variant="contained">
+                    Cadastrar
                 </Button>
 
             </form>

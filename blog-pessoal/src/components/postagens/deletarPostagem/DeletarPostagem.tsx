@@ -51,8 +51,8 @@ function DeletarPostagem() {
           
   return (
     <>
-      <Box m={2}>
-        <Card variant="outlined" >
+      <Box m={2} display="flex" flexWrap="wrap" justifyContent="center">
+        <Card variant="outlined" className='margin'>
           <CardContent>
             <Box justifyContent="center">
               <Typography color="textSecondary" gutterBottom>

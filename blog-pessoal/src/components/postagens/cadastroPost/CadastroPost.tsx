@@ -109,7 +109,7 @@ function CadastroPost() {
                 variant="h3" 
                 color="textSecondary" 
                 component="h1" 
-                align="center" >Formulário de cadastro postagem
+                align="center" >New Post
                 </Typography>
 
 
@@ -117,7 +117,7 @@ function CadastroPost() {
                 value={postagem.titulo} 
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} 
                 id="titulo" 
-                label="titulo" 
+                label="Título" 
                 variant="outlined" 
                 name="titulo" 
                 margin="normal" 
@@ -128,14 +128,14 @@ function CadastroPost() {
                 value={postagem.texto} 
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} 
                 id="texto" 
-                label="texto" 
+                label="Texto" 
                 name="texto" 
                 variant="outlined" 
                 margin="normal" 
                 fullWidth />
 
 
-                <FormControl >
+                <FormControl className='tema' >
 
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
 
@@ -155,9 +155,9 @@ function CadastroPost() {
                     </Select>
 
 
-                    <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary">
-                        Finalizar
+                    {/* <FormHelperText>Escolha um tema para a postagem</FormHelperText> */}
+                    <Button className='bt-Finalizar' type="submit" variant="contained" color="secondary">
+                        Postar
                     </Button>
 
                 </FormControl>

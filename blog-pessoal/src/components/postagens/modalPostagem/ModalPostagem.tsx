@@ -5,6 +5,7 @@ import {Button,Box } from "@mui/material"
 import CloseIcon from '@material-ui/icons/Close';
 import './ModalPostagem.css';
 import CadastroPost from '../cadastroPost/CadastroPost';
+import { blue } from '@material-ui/core/colors';
 
 
 function getModalStyle() {
@@ -23,9 +24,11 @@ const useStyles = makeStyles((theme: Theme) =>
     paper: {
       position: 'absolute',
       width: 400,
-      backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
+      backgroundColor: "#90caf9",
+      // theme.palette.background.paper,
+      border: '8px solid #3b0953',
       boxShadow: theme.shadows[5],
+      borderRadius: '3rem',
       padding: theme.spacing(2, 4, 3),
     },
   }),

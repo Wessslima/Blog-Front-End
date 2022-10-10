@@ -51,9 +51,9 @@ function DeletarTema() {
 
   return (
     <>
-      <Box m={2}>
+      <Box m={2} display="flex" flexWrap="wrap" justifyContent="center">
 
-        <Card variant="outlined">
+        <Card variant="outlined" className='margin'>
 
           <CardContent>
             <Box justifyContent="center">

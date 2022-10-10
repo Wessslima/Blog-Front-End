@@ -5,7 +5,7 @@
 .btnModal{
     border-color: white;
     background-color: white !important;
-    color: rgb(59, 9, 83) !important;
+    color: #3b0953 !important;
 }
 .btnModal:hover{
     box-shadow: 0px 0px 10px 2px rgba(23,209,255,0.8);
