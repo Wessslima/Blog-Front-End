@@ -3,19 +3,32 @@ import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem,
 import './CadastroPost.css';
 import {useNavigate, useParams } from 'react-router-dom';
 import Tema from '../../../model/Tema';
-import useLocalStorage from 'react-use-localstorage';
 import Postagem from '../../../model/Postagem';
 import { busca, buscaId, post, put } from '../../../service/Service';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 function CadastroPost() {
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
     const [temas, setTemas] = useState<Tema[]>([])
-    const [token, setToken] = useLocalStorage('token');
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            toast.error('Você precisa estar logado', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             navigate("/login")
 
         }
@@ -84,7 +97,16 @@ function CadastroPost() {
                     'Authorization': token,
                 },
             });
-            alert('Postagem atualizada com sucesso');
+            toast.success('Postagem Atualizada', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         } catch (error) {
             alert('Erro na atualização, verifique os campos');
         }
@@ -95,7 +117,16 @@ function CadastroPost() {
                     'Authorization': token,
                 },
             });
-            alert('Postagem cadastrada com sucesso');
+            toast.success('Postagem Cadastrada', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         } catch (error) {
             alert('Erro ao cadastrar, verifique os campos');
         }
@@ -121,7 +152,7 @@ function CadastroPost() {
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} 
                 id="titulo" 
                 label="Título" 
-                variant="outlined" 
+                variant="filled" 
                 name="titulo" 
                 margin="normal" 
                 fullWidth />
@@ -133,7 +164,7 @@ function CadastroPost() {
                 id="texto" 
                 label="Texto" 
                 name="texto" 
-                variant="outlined" 
+                variant="filled" 
                 margin="normal" 
                 fullWidth />
 
@@ -143,6 +174,7 @@ function CadastroPost() {
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
 
                     <Select
+                    variant='filled'
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
                         onChange={(e) => buscaId(`/temas/${e.target.value}`, setTema, {

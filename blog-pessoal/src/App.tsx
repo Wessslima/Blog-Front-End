@@ -1,3 +1,4 @@
+import { Provider } from 'react-redux';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Footer from './components/estaticos/footer/Footer';
@@ -11,9 +12,17 @@ import ListaTema from './components/temas/listatema/ListaTema';
 import CadastroUsuario from './paginas/cadastro/CadastroUsuario';
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
+import store from './store/store';
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
+
+    <Provider store={store}>
+
+      <ToastContainer/>
+
     <BrowserRouter>
 
       <Navbar />
@@ -53,6 +62,8 @@ function App() {
       <Footer />
       
     </BrowserRouter>
+
+    </Provider>
   );
 }
 
