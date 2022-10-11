@@ -8,6 +8,7 @@ import './CadastroUsuario.css';
 function CadastroUsuario() {
 
     let navigate = useNavigate();
+    const [cadastro, setCadastro] = useState(false)
     const [confirmarSenha,setConfirmarSenha] = useState<String>("")
     const [user, setUser] = useState<User>(
         {
@@ -24,6 +25,14 @@ function CadastroUsuario() {
             usuario: '',
             senha: ''
         })
+
+        useEffect(() => {
+            if(user.nome.length > 3 && user.usuario !== '' && user.senha.length >= 8 ) {
+            setCadastro(true)
+            }
+        }, [user])
+
+
 
     useEffect(() => {
         if (userResult.id != 0) {
@@ -45,15 +54,27 @@ function CadastroUsuario() {
         })
 
     }
-    async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
-        e.preventDefault()
-        if(confirmarSenha == user.senha){
-        cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
-        alert('Usuario cadastrado com sucesso')
-        }else{
-            alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
-        }
+
+
+    async function cadastrar(event: ChangeEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (confirmarSenha === user.senha && user.senha.length >= 8) {
+    try {
+        await cadastroUsuario('usuarios/cadastrar', user, setUserResult);
+        alert('Usuário criado com sucesso');
+    } catch (error) {
+        alert('Falha ao cadastrar o usuário. Por favor, confira os campos');
     }
+    } else {
+    alert(
+        'Senhas divergentes, ou menores que 8 caracteres. Por favor, verifique os campos.'
+    );
+    }
+}
+
+
+
+
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
             
@@ -63,7 +84,7 @@ function CadastroUsuario() {
                     
                     <Box paddingX={10}>
                         
-                    <form onSubmit={onSubmit}>
+                    <form onSubmit={cadastrar}>
 
                         <Typography 
                         className='signUp'
@@ -135,7 +156,7 @@ function CadastroUsuario() {
                                     Cancelar
                                 </Button>
                             </Link>
-                            <Button className='bt-Cadastrar' type='submit' variant='outlined'>
+                            <Button className='bt-Cadastrar' type='submit' variant='outlined' disabled={!cadastro}>
                                     Cadastrar
                             </Button>
                         </Box>

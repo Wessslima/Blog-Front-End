@@ -78,25 +78,28 @@ function CadastroPost() {
         e.preventDefault()
 
         if (id !== undefined) {
-            put(`/postagens`, postagem, setPostagem, {
+            try{ 
+                await put(`/postagens`, postagem, setPostagem, {
                 headers: {
-                    'Authorization': token
-                }
-            })
+                    'Authorization': token,
+                },
+            });
             alert('Postagem atualizada com sucesso');
-        } else {
-            post(`/postagens`, postagem, setPostagem, {
-                headers: {
-                    'Authorization': token
-                }
-            })
-            alert('Postagem cadastrada com sucesso');
+        } catch (error) {
+            alert('Erro na atualização, verifique os campos');
         }
-        back()
-
+    }else{
+        try{ 
+            await post(`/postagens`, postagem, setPostagem, {
+                headers: {
+                    'Authorization': token,
+                },
+            });
+            alert('Postagem cadastrada com sucesso');
+        } catch (error) {
+            alert('Erro ao cadastrar, verifique os campos');
+        }
     }
-
-    function back() {
         navigate('/postagens')
     }
 
@@ -106,8 +109,8 @@ function CadastroPost() {
             <form onSubmit={onSubmit}>
 
                 <Typography 
+                className='newPost'
                 variant="h3" 
-                color="textSecondary" 
                 component="h1" 
                 align="center" >New Post
                 </Typography>
@@ -156,7 +159,7 @@ function CadastroPost() {
 
 
                     {/* <FormHelperText>Escolha um tema para a postagem</FormHelperText> */}
-                    <Button className='bt-Finalizar' type="submit" variant="contained" color="secondary">
+                    <Button disabled={tema.id == 0} className='bt-Finalizar' type="submit" variant="contained" color="secondary">
                         Postar
                     </Button>
 

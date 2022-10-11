@@ -53,28 +53,32 @@ function CadastroTema() {
             console.log("tema" + JSON.stringify(tema))
     
             if (id !== undefined) {
-                console.log(tema)
-                put(`/temas`, tema, setTema, {
+                // console.log(tema)
+                try{ 
+                    await put(`/temas`, tema, setTema, {
                     headers: {
                         'Authorization': token
                     }
                 })
                 alert('Tema atualizado com sucesso');
-            } else {
-                post(`/temas`, tema, setTema, {
+                navigate('/temas')
+            } catch(error) {
+                alert('Falha na atualização, verifique os campos')
+            }
+        } else {
+            try{
+                await post(`/temas`, tema, setTema, {
                     headers: {
                         'Authorization': token
                     }
                 })
                 alert('Tema cadastrado com sucesso');
+                navigate('/temas')
+            } catch (error) {
+                alert('Falha na criação do tema, verifique os campos')
             }
-            back()
-    
         }
-    
-        function back() {
-            navigate('/temas')
-        }
+    }
 
 
 
@@ -86,8 +90,7 @@ function CadastroTema() {
 
                 <Typography 
                 className='cadastrarTema'
-                variant="h3" 
-                color="textSecondary" 
+                variant="h3"
                 component="h1" 
                 align="center" >Cadastrar Tema
                 </Typography>
@@ -99,12 +102,12 @@ function CadastroTema() {
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} 
                 id="descricao" 
                 label="Insira um Tema" 
-                variant="outlined" 
+                variant="filled" 
                 name="descricao" 
                 margin="normal" 
                 fullWidth />
 
-                <Button className='bt-Finalizar' color='secondary' type="submit" variant="contained">
+                <Button disabled={tema.descricao == ""} className='bt-Finalizar' type="submit" variant="contained" color='secondary'>
                     Cadastrar
                 </Button>
 

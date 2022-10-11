@@ -6,6 +6,10 @@
     border-radius: 2rem;
 }
 
+.newPost{
+    color: rgba(23,209,255,0.8);
+}
+
 .bt-Finalizar{
     margin: 1rem !important;
 }
