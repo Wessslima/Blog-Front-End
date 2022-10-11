@@ -80,7 +80,7 @@ function CadastroTema() {
 
     return (
 
-        <Container maxWidth="sm" className="topo">
+        <Container maxWidth="sm" className="formTema">
 
             <form onSubmit={onSubmit}>
 
