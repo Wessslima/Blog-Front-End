@@ -8,13 +8,18 @@ import { busca, buscaId, post, put } from '../../../service/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import User from '../../../model/User';
 
 function CadastroPost() {
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
     const [temas, setTemas] = useState<Tema[]>([])
+
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
+    );
+    const userId = useSelector<TokenState, TokenState["id"]>(
+        (state) => state.id
     );
 
     useEffect(() => {
@@ -39,20 +44,32 @@ function CadastroPost() {
             id: 0,
             descricao: ''
         })
+
+
+        const [user, setUser] = useState<User>({
+            id: +userId,
+            nome: '',
+            usuario: '',
+            senha: ''
+        })
+
+
     const [postagem, setPostagem] = useState<Postagem>({
         id: 0,
         titulo: '',
         texto: '',
         data: '',
-        tema: null
+        tema: null,
+        user: null                                                                              
     })
 
     useEffect(() => { 
         setPostagem({
             ...postagem,
-            tema: tema
-        })
-    }, [tema])
+            tema: tema,
+            user: user
+        });
+    }, [tema]);
 
     useEffect(() => {
         getTemas()
@@ -108,7 +125,16 @@ function CadastroPost() {
                 progress: undefined,
             });
         } catch (error) {
-            alert('Erro na atualização, verifique os campos');
+            toast.error('Erro na atualização, verifique se os campos foram preenchidos corretamente', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         }
     }else{
         try{ 
@@ -128,7 +154,16 @@ function CadastroPost() {
                 progress: undefined,
             });
         } catch (error) {
-            alert('Erro ao cadastrar, verifique os campos');
+            toast.error('Erro ao cadastrar, verifique se os campos foram preenchidos corretamente', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
         }
     }
         navigate('/postagens')
@@ -152,7 +187,7 @@ function CadastroPost() {
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} 
                 id="titulo" 
                 label="Título" 
-                variant="filled" 
+                variant="outlined" 
                 name="titulo" 
                 margin="normal" 
                 fullWidth />
@@ -164,7 +199,7 @@ function CadastroPost() {
                 id="texto" 
                 label="Texto" 
                 name="texto" 
-                variant="filled" 
+                variant="outlined" 
                 margin="normal" 
                 fullWidth />
 
@@ -174,7 +209,6 @@ function CadastroPost() {
                     <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
 
                     <Select
-                    variant='filled'
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
                         onChange={(e) => buscaId(`/temas/${e.target.value}`, setTema, {

@@ -85,7 +85,16 @@ function CadastroTema() {
                 });
                 navigate('/temas')
             } catch(error) {
-                alert('Falha na atualização, verifique os campos')
+                toast.error('Falha na Atualização', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+                });
             }
         } else {
             try{
@@ -106,7 +115,16 @@ function CadastroTema() {
                 });
                 navigate('/temas')
             } catch (error) {
-                alert('Falha na criação do tema, verifique os campos')
+                toast.error('Falha na Criação do Tema', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+                });
             }
         }
     }
