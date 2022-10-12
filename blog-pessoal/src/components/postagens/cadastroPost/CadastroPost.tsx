@@ -8,7 +8,7 @@ import { busca, buscaId, post, put } from '../../../service/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
-import User from '../../../model/User';
+import Usuario from '../../../model/Usuario';
 
 function CadastroPost() {
     let navigate = useNavigate();
@@ -46,7 +46,7 @@ function CadastroPost() {
         })
 
 
-        const [user, setUser] = useState<User>({
+        const [usuario, setUsuario] = useState<Usuario>({
             id: +userId,
             nome: '',
             usuario: '',
@@ -60,14 +60,14 @@ function CadastroPost() {
         texto: '',
         data: '',
         tema: null,
-        user: null                                                                              
+        usuario: null                                                                              
     })
 
     useEffect(() => { 
         setPostagem({
             ...postagem,
             tema: tema,
-            user: user
+            usuario: usuario
         });
     }, [tema]);
 
