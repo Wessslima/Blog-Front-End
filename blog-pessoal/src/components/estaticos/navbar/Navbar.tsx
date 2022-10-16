@@ -47,10 +47,20 @@ function Navbar() {
 
             <Grid container justifyContent="flex-end">
             <Box display="flex" justifyContent="start">
+
                 <Link to="/home" className='cursor'>
                     <Box mx={1}>
                         <Typography variant="h6" color="inherit">
                             Home
+                        </Typography>
+                    </Box>
+                </Link>
+
+
+                <Link to='/perfil' className="cursor">
+                    <Box mx={1}>
+                        <Typography variant="h6" color="inherit">
+                            Perfil
                         </Typography>
                     </Box>
                 </Link>

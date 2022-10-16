@@ -15,6 +15,7 @@ import Login from './paginas/login/Login';
 import store from './store/store';
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Perfil from './components/perfil/Perfil';
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
             <Route path="/" element={<Login />} />
 
             <Route path="/login" element={<Login />} />
+
+            <Route path="/perfil" element={<Perfil />} />
 
             <Route path="/home" element={<Home />} />
 

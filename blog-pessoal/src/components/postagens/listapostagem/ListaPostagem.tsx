@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 
+
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
   let navigate = useNavigate();

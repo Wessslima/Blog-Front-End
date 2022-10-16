@@ -6,7 +6,6 @@ import './Footer.css';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 
-
 function Footer() {
 
     const token = useSelector<TokenState, TokenState["tokens"]>(

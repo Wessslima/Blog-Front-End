@@ -18,6 +18,7 @@ function Login() {
             nome: '',
             usuario: '',
             senha: '',
+            foto: '',
             token: '',
         }
         );
@@ -27,6 +28,7 @@ function Login() {
             nome: '',
             usuario: '',
             senha: '',
+            foto: '',
             token: '',
         });
 
@@ -38,13 +40,6 @@ function Login() {
                 [e.target.name]: e.target.value
             })
         }
-
-            // useEffect(()=>{
-            //     if(token != ''){
-            //         dispatch(addToken(token));
-            //         navigate('/home')
-            //     }
-            // }, [token])
 
 
             //pega o token e o id do json e guarda no redux
@@ -109,7 +104,7 @@ function Login() {
                         value={userLogin.usuario} 
                         onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} 
                         id='usuario' 
-                        label='Usuário' 
+                        label='Email de Usuário' 
                         variant='filled' 
                         name='usuario' 
                         margin='normal' 

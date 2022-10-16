@@ -50,7 +50,8 @@ function CadastroPost() {
             id: +userId,
             nome: '',
             usuario: '',
-            senha: ''
+            senha: '',
+            foto: ''
         })
 
 

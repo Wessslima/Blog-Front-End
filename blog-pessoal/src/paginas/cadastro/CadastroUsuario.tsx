@@ -16,7 +16,8 @@ function CadastroUsuario() {
             id: 0,
             nome: '',
             usuario: '',
-            senha: ''
+            senha: '',
+            foto: ''
         })
 
     const [userResult, setUserResult] = useState<User>(
@@ -24,7 +25,8 @@ function CadastroUsuario() {
             id: 0,
             nome: '',
             usuario: '',
-            senha: ''
+            senha: '',
+            foto: ''
         })
 
         useEffect(() => {
@@ -134,9 +136,21 @@ function CadastroUsuario() {
                         value={user.usuario} 
                         onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                         id='usuario' 
-                        label='Nome de Usuário' 
+                        label='Email de Usuário' 
                         variant='filled' 
                         name='usuario' 
+                        margin='normal'
+                        fullWidth />
+
+
+                        <TextField 
+                        className='bg-Form2'
+                        value={user.foto} 
+                        onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                        id='foto' 
+                        label='Insira o Link da sua Foto' 
+                        variant='filled' 
+                        name='foto' 
                         margin='normal'
                         fullWidth />
 

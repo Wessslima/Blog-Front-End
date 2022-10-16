@@ -10,6 +10,7 @@ import { toast } from 'react-toastify';
 
 
 function DeletarTema() {
+  
     let navigate = useNavigate();
     const { id } = useParams<{id: string}>();
     const [tema, setTema] = useState<Tema>()

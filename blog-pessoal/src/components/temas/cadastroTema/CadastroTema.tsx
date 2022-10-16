@@ -4,7 +4,6 @@ import { useNavigate, useParams } from 'react-router-dom'
 import './CadastroTema.css';
 import Tema from '../../../model/Tema';
 import { buscaId, post, put } from '../../../service/Service';
-import { Box } from '@material-ui/core';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
