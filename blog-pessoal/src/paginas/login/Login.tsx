@@ -81,7 +81,7 @@ function Login() {
         }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
+        <Grid container direction='row' justifyContent='center' alignItems='center' className='azul'>
 
             <Grid alignItems='center' xs={6}>
 
@@ -95,7 +95,7 @@ function Login() {
                         gutterBottom 
                         color='textPrimary' 
                         component='h3' 
-                        align='center'>Sign in
+                        align='center'>WEST
                         </Typography>
 
 

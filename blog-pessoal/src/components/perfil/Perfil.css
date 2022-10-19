@@ -1,24 +1,28 @@
 .perfilContainer{
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 3rem;
     gap: 1rem;
+    background-color: rgba(73, 144, 161, 0.8);
+    border-radius: 2rem;
   }
   
   .perfil {
-    -webkit-box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.4); 
-    box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.4);
-    border-radius: 8px;
+    border-radius: 2rem;
     padding: 1rem;
   }
   
   .imgPerfil {
     width: 80%;
-    aspect-ratio: 1;
     border-radius: 50%;
     margin: 0 auto;
+    margin-bottom: 1rem;
     display: block;
-    border: 3px solid #303F9F
+    border: 3px solid rgba(23,209,255,0.8);
+  }
+
+  .west{
+    color: rgba(43, 77, 85, 0.8);
   }
   
   .postUser {
@@ -33,4 +37,5 @@
     box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.4);
     border-radius: 8px;
     padding: 0 1rem 1.5rem;
+    background-color: blueviolet;
   }

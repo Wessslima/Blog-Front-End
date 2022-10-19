@@ -41,7 +41,7 @@ function Perfil() {
         <div className='perfilContainer'>
           <Grid xs={3} alignItems='center' justifyContent='center' className='perfil'>
             <img src={usuario.foto} alt="" className='imgPerfil' />
-            <Typography variant='h5' align='center' >{usuario.nome}</Typography>
+            <Typography className='west' variant='h5' align='center' >{usuario.nome}</Typography>
           </Grid>
           <Grid xs={9} justifyContent='center' className='perfil'>
 

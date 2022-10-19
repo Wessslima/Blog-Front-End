@@ -1,3 +1,7 @@
+.azul{
+  background: linear-gradient(236deg, #302472 30%, #000000 120%);
+}
+
 .imagem{
   background-image: url(/src/assets/W-AZUL.png);
   background-repeat: no-repeat;
