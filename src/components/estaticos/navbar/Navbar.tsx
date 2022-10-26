@@ -38,11 +38,13 @@ function Navbar() {
     if(token != ""){
         navbarComponent = <AppBar className='navbar' position="static">
         <Toolbar variant="dense">
+        <Link to="/home" className='cursor'>
             <Box>
                 <Typography variant="h5" color="inherit">
                     WEST
                 </Typography>
             </Box>
+        </Link>
 
 
             <Grid container justifyContent="flex-end">
@@ -95,7 +97,7 @@ function Navbar() {
 
                 <Box mx={1} className='cursor' onClick={goLogout}>
                     <Typography variant="h6" color="inherit">
-                        Logout
+                        Sair
                     </Typography>
                 </Box>
 

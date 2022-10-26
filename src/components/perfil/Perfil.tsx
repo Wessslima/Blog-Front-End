@@ -38,14 +38,18 @@ function Perfil() {
   return (
     <>
       <Container>
-        <div className='perfilContainer'>
-          <Grid xs={3} alignItems='center' justifyContent='center' className='perfil'>
-            <img src={usuario.foto} alt="" className='imgPerfil' />
-            <Typography className='west' variant='h5' align='center' >{usuario.nome}</Typography>
-          </Grid>
-          <Grid xs={9} justifyContent='center' className='perfil'>
 
-            <div className="postUser">
+      <img src={usuario.foto} alt="" className='imgPerfil' />
+      <Typography className='west' variant='h5' align='center' >{usuario.nome}</Typography>
+
+        <div className='perfilContainer'>
+          <Grid xs={3} alignItems='center' justifyContent='center' className='perfil'></Grid>
+          <Grid xs={9} justifyContent='center' className='perfil'></Grid>
+        </div>
+
+
+        <Grid className='posts'>
+        <div className="postUser">
             {usuario.postagem?.map((post) => (
               <div className="postPerfil">
                 <h3>{post.titulo}</h3>
@@ -53,10 +57,19 @@ function Perfil() {
                 <strong>{post.tema?.descricao}</strong>
               </div>
             ))}
-            </div>
-
-          </Grid>
         </div>
+
+            <iframe className='video'
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/KVMwBlaqB5Y" 
+                title="YouTube video player" 
+                frameBorder="8" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+            </iframe>  
+            </Grid>          
+
       </Container>
     </>
   );

@@ -59,11 +59,15 @@ function ListaPostagem() {
               <CardContent>
 
               <Typography variant="body2" component="p" className='by'>
-                  by: {post.usuario?.nome}
+                  @{post.usuario?.nome}
                 </Typography>
 
-                <Typography color="textSecondary" gutterBottom>
+                {/* <Typography color="textSecondary" gutterBottom>
                   Postagens
+                </Typography> */}
+
+                <Typography variant="body2" component="p">
+                  {post.tema?.descricao}
                 </Typography>
 
 
@@ -74,11 +78,6 @@ function ListaPostagem() {
 
                 <Typography variant="body2" component="p">
                   {post.texto}
-                </Typography>
-
-
-                <Typography variant="body2" component="p">
-                  {post.tema?.descricao}
                 </Typography>
 
               </CardContent>

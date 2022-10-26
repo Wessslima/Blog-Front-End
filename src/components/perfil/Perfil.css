@@ -1,41 +1,60 @@
+.imgPerfil {
+    width: 20%;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+    border: 3px solid rgba(23,209,255,0.8);
+
+    transition: 0.5s;
+  }
+.imgPerfil:hover{
+  transform: scale(1.1);
+  border: 5px solid rgb(90, 222, 255);
+}
+
+  .west{
+    color: rgba(23,209,255,0.8);
+  }
+
+
 .perfilContainer{
     display: flex;
     justify-content: center;
     margin-top: 3rem;
     gap: 1rem;
-    background-color: rgba(73, 144, 161, 0.8);
+    background: linear-gradient(236.85deg, #62676e 27.26%, #5e8fc0 96.03%);
     border-radius: 2rem;
+    opacity: 0.5;
   }
   
-  .perfil {
+.perfil {
     border-radius: 2rem;
     padding: 1rem;
-  }
-  
-  .imgPerfil {
-    width: 80%;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    display: block;
-    border: 3px solid rgba(23,209,255,0.8);
-  }
+  } 
 
-  .west{
-    color: rgba(43, 77, 85, 0.8);
-  }
   
-  .postUser {
+.postUser {
     display: flex;
     gap: 1rem;
-    padding-left: 1rem;
-    margin-top: 1rem;
+    margin: 3rem;
   }
   
   .postPerfil {
     -webkit-box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.4); 
     box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.4);
     border-radius: 8px;
-    padding: 0 1rem 1.5rem;
-    background-color: blueviolet;
-  }
+    padding: 2rem;
+    background-color: rgba(73, 144, 161, 0.8);
+}
+
+.posts{
+  display: flex;
+  margin: 3rem;
+
+}
+
+.video{
+  border-radius: 15px;
+}

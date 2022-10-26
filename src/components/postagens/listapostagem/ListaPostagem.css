@@ -4,8 +4,10 @@
 
 .margin{
     margin-top: 1rem;
+    background-color: rgba(73, 144, 161, 0.8) !important;
 }
 
 .by{
-    color: red;
+    margin-bottom: 1rem !important;
+    color: rgb(73, 30, 73);
 }
