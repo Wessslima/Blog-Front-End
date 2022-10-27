@@ -10,3 +10,8 @@
 .tbPostagem{
     background: linear-gradient(236deg, #2e2633 0%, #7e469e 20%, #2a1438 70%);
 }
+
+.video{
+    border-radius: 15px;
+    margin-top: 2rem;
+}

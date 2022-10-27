@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { AppBar, Tab, Tabs, Typography, Box } from '@mui/material';
+import { AppBar, Tab, Tabs, Typography, Box, Grid } from '@mui/material';
 import { TabContext, TabPanel } from '@material-ui/lab';
 import ListaPostagem from '../listapostagem/ListaPostagem';
 import './TabPostagem.css';
@@ -51,6 +51,18 @@ function TabPostagem() {
           color="textPrimary" 
           align="justify">Aquele que vem do oeste...
           </Typography>
+
+          <Grid container justifyContent="center">
+          <iframe className='video'
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/KVMwBlaqB5Y" 
+                title="YouTube video player" 
+                frameBorder="8" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+            </iframe>
+            </Grid> 
         </TabPanel>
 
       </TabContext>

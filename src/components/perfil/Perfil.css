@@ -36,6 +36,7 @@
 
   
 .postUser {
+  justify-content: center;
     display: flex;
     gap: 1rem;
     margin: 3rem;
@@ -50,11 +51,6 @@
 }
 
 .posts{
-  display: flex;
   margin: 3rem;
 
-}
-
-.video{
-  border-radius: 15px;
 }
