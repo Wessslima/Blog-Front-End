@@ -98,8 +98,6 @@ function CadastroUsuario() {
 
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center' className='vermelho'>
-            
-            <Grid item xs={6} className='imagem2'></Grid>
 
                 <Grid item xs={6} alignItems='center'>
                     
@@ -199,6 +197,8 @@ function CadastroUsuario() {
                 </Box>
 
             </Grid>
+
+            <Grid item xs={6} className='imagem2'></Grid>
 
         </Grid>
     );

@@ -49,7 +49,7 @@ function TabPostagem() {
           variant="body1" 
           gutterBottom 
           color="textPrimary" 
-          align="justify">Aquele que vem do oeste...
+          align="justify">Aquele que vem do oeste em busca do que está perdido...
           </Typography>
 
           <Grid container justifyContent="center">

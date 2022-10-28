@@ -3,6 +3,8 @@
 }
 
 .margin{
+    width: 330px;
+    height: 440px;
     margin-top: 1rem;
     background-color: rgba(73, 144, 161, 0.8) !important;
 }
