@@ -1,11 +1,12 @@
-import { Grid, Typography } from '@mui/material';
+import { Box, Button, CardActions, CardMedia, Grid, Typography } from '@mui/material';
 import { Container } from '@mui/system';
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import Usuario from '../../model/Usuario';
 import { TokenState } from '../../store/tokens/tokensReducer';
-import { buscaId } from '../../service/Service';
+import { buscaId, post } from '../../service/Service';
 import './Perfil.css'
+import { Link } from 'react-router-dom';
 
 function Perfil() {
 
@@ -47,15 +48,42 @@ function Perfil() {
           <Grid xs={9} justifyContent='center' className='perfil'></Grid>
         </div>
 
-
         <Grid className='posts'>
         <div className="postUser">
             {usuario.postagem?.map((post) => (
+              <Box m={2} key={post.id} display="flex" flexWrap="wrap" justifyContent="center">
               <div className="postPerfil">
-                <h3>{post.titulo}</h3>
-                <p>{post.texto}</p>
                 <strong>{post.tema?.descricao}</strong>
+                <CardMedia
+                    component="img"
+                    height="300"
+                    width="300"
+                    image={post.texto}/>
+                <h3>{post.titulo}</h3>
+
+                <Box display="flex" justifyContent="center" mb={1.5}>
+
+                    <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
+                      <Box mx={1}>
+                        <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                          atualizar
+                        </Button>
+                      </Box>
+                    </Link>
+
+
+                    <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
+                      <Box mx={1}>
+                        <Button variant="contained" size='small' color="secondary">
+                          deletar
+                        </Button>
+                      </Box>
+                    </Link>
+
+                </Box>
+
               </div>
+              </Box>
             ))}
         </div>
         </Grid>          

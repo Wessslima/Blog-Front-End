@@ -184,23 +184,23 @@ function CadastroPost() {
 
 
                 <TextField 
+                value={postagem.texto} 
+                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} 
+                id="texto" 
+                label="Insira o link da sua foto" 
+                name="texto" 
+                variant="outlined" 
+                margin="normal" 
+                fullWidth />
+
+
+                <TextField 
                 value={postagem.titulo} 
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} 
                 id="titulo" 
                 label="Título" 
                 variant="outlined" 
                 name="titulo" 
-                margin="normal" 
-                fullWidth />
-
-
-                <TextField 
-                value={postagem.texto} 
-                onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} 
-                id="texto" 
-                label="Texto" 
-                name="texto" 
-                variant="outlined" 
                 margin="normal" 
                 fullWidth />
 
@@ -224,8 +224,6 @@ function CadastroPost() {
                         }
                     </Select>
 
-
-                    {/* <FormHelperText>Escolha um tema para a postagem</FormHelperText> */}
                     <Button disabled={tema.id == 0} className='bt-Finalizar' type="submit" variant="contained" color="secondary">
                         Postar
                     </Button>
