@@ -61,21 +61,20 @@ function Perfil() {
                     image={post.texto}/>
                 <h3>{post.titulo}</h3>
 
-                <Box display="flex" justifyContent="center" mb={1.5}>
+                <Box display="flex" justifyContent="space-around" mb={1.5} marginTop={4}>
+
+                    <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
+                          <Box mx={1}>
+                            <Button variant="outlined" size='small' className='deletar'>
+                              excluir
+                            </Button>
+                          </Box>
+                    </Link>
 
                     <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                       <Box mx={1}>
-                        <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                        <Button variant="outlined" size='small' className='atualizar'>
                           atualizar
-                        </Button>
-                      </Box>
-                    </Link>
-
-
-                    <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
-                      <Box mx={1}>
-                        <Button variant="contained" size='small' color="secondary">
-                          deletar
                         </Button>
                       </Box>
                     </Link>

@@ -76,7 +76,7 @@ function ListaPostagem() {
                     width="300"
                     image={post.texto}/>
 
-                <Typography variant="h6" component="p">
+                <Typography variant="h6" component="p" className='marginTitulo'>
                   {post.titulo}
                 </Typography>
 

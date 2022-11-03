@@ -13,9 +13,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 2rem;
+    margin-bottom: 3rem !important;
 }
 
 .by{
     margin-bottom: 1rem !important;
     color: rgb(73, 30, 73);
+}
+
+.marginTitulo{
+    margin-top: 1rem !important;
 }

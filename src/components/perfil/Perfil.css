@@ -56,3 +56,13 @@
 .posts{
   margin: 3rem;
 }
+
+.atualizar{
+  color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 0px 10px 4px rgba(23,209,255,0.8);
+}
+
+.deletar{
+  color: rgb(255, 255, 255) !important;
+  box-shadow: 0px 0px 10px 4px rgba(214, 16, 16, 0.8);
+}

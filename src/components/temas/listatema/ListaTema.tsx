@@ -52,7 +52,7 @@ function ListaTema() {
     {
       temas.map(tema =>(
 
-      <Box m={2} key={tema.id} display="flex" flexWrap="wrap" justifyContent="center">
+      <Box m={2} key={tema.id} display="flex" flexWrap="wrap" justifyContent="center" marginTop={5}>
 
         <Card variant="outlined" className='margini'>
           <CardContent>
@@ -70,19 +70,18 @@ function ListaTema() {
           <CardActions>
             <Box display="flex" justifyContent="center" mb={1.5} >
 
-              <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
+            <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}>
-                  <Button variant="contained" className="marginLeft" size='small' color="primary" >
-                    atualizar
+                  <Button variant="outlined" size='small' className='deletarTema'>
+                    excluir
                   </Button>
                 </Box>
               </Link>
 
-
-              <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
+              <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                 <Box mx={1}>
-                  <Button variant="contained" size='small' color="secondary">
-                    deletar
+                  <Button variant="outlined" size='small' className='atualizarTema'>
+                    atualizar
                   </Button>
                 </Box>
               </Link>

@@ -21,8 +21,8 @@ function TabPostagem() {
         <AppBar position="static">
 
           <Tabs centered indicatorColor="secondary" value={false} onChange={handleChange} className='tbPostagem'>
-            <Tab className='sobre' label="Todas as postagens" value="1"/>
-            <Tab className='sobre' label="Sobre" value="2" />
+            <Tab className='sobre' label="Versions" value="1"/>
+            <Tab className='sobre' label="Channel" value="2" />
           </Tabs>
 
         </AppBar>
@@ -49,7 +49,7 @@ function TabPostagem() {
           variant="body1" 
           gutterBottom 
           color="textPrimary" 
-          align="justify">Aquele que vem do oeste em busca do que está perdido...
+          align="justify">Time Lapse de 1 ano
           </Typography>
 
           <Grid container justifyContent="center">
