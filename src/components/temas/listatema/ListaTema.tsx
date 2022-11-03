@@ -54,7 +54,7 @@ function ListaTema() {
 
       <Box m={2} key={tema.id} display="flex" flexWrap="wrap" justifyContent="center">
 
-        <Card variant="outlined" className='margin'>
+        <Card variant="outlined" className='margini'>
           <CardContent>
 
             <Typography color="textSecondary" gutterBottom>

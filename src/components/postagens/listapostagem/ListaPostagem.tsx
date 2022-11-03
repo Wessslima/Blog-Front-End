@@ -7,6 +7,7 @@ import './ListaPostagem.css';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import { Grid } from '@material-ui/core';
 
 
 function ListaPostagem() {
@@ -49,6 +50,9 @@ function ListaPostagem() {
 
   return (
     <>
+
+    <Grid className='explorar'>
+
       {
         posts.map(post => (
 
@@ -82,6 +86,7 @@ function ListaPostagem() {
           </Box>
         ))
       }
+      </Grid>
     </>
   )
 }

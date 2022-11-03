@@ -40,6 +40,7 @@
     display: flex;
     gap: 1rem;
     margin: 3rem;
+    flex-wrap: wrap;
   }
   
   .postPerfil {
@@ -47,10 +48,11 @@
     box-shadow: 3px 3px 15px 1px rgba(0,0,0,0.4);
     border-radius: 8px;
     padding: 2rem;
+    width: 330px;
+    height: 440px;
     background-color: rgba(73, 144, 161, 0.8);
 }
 
 .posts{
   margin: 3rem;
-
 }

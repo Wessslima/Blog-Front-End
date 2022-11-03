@@ -2,7 +2,8 @@
     text-decoration: none;
 }
 
-.margin{
+.margini{
     margin-top: 1rem;
     margin-bottom: 1rem;
+    background-color: rgba(73, 144, 161, 0.8) !important;
 }
