@@ -95,7 +95,7 @@ function Navbar() {
                 </Link>
 
 
-                <Box mx={1} className='cursor' onClick={goLogout}>
+                <Box mx={1} className='sair' onClick={goLogout}>
                     <Typography variant="h6" color="inherit">
                         Sair
                     </Typography>

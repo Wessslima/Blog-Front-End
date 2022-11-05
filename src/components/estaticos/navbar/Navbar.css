@@ -3,6 +3,18 @@
     color: white;
     text-decoration: none;
 }
+.cursor:hover{
+    color: rgb(32, 207, 207);
+}
+
+.sair{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.sair:hover{
+    color: red;
+}
 
 .navbar{
     background: linear-gradient(236deg, #2e2633 5%, #7e469e 20%, #2a1438 70%) !important;

@@ -77,7 +77,7 @@ function DeletarPostagem() {
   return (
     <>
       <Box m={2} display="flex" flexWrap="wrap" justifyContent="center">
-        <Card variant="outlined" className='margin'>
+        <Card variant="outlined" className='margini'>
           <CardContent>
             <Box justifyContent="center">
               <Typography color="textSecondary" gutterBottom>
