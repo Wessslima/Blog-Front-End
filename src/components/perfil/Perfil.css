@@ -2,17 +2,36 @@
     width: 20%;
     border-radius: 50%;
     margin: 0 auto;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 8rem;
     display: block;
-    border: 3px solid rgba(23,209,255,0.8);
+    border: 5px solid rgba(23,209,255,0.8);
+    animation: picture 3500ms ease-in-out infinite;
 
     transition: 0.5s;
   }
 .imgPerfil:hover{
-  transform: scale(1.1);
-  border: 5px solid rgb(90, 222, 255);
+  width: 21%;
+  transform: scale(2.1);
+  border: 7px solid rgb(255, 255, 255);
 }
+
+@keyframes picture { 
+  0% {
+      transform: translateY(-50px);
+      box-shadow: 0 3px 20px rgba(252, 252, 252, 1);
+  }
+
+  50% {
+      transform: translateY(-50px);
+      box-shadow: 0 3px 20px rgba(252, 252, 252, 0);
+  }
+
+  100% {
+      transform: translateY(-50px);
+      box-shadow: 0 3px 20px rgb(252, 252, 252, 1);
+  }
+}
+
 
   .west{
     color: rgba(23,209,255,0.8);

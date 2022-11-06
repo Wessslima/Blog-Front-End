@@ -21,16 +21,16 @@ function TabPostagem() {
         <AppBar position="static">
 
           <Tabs centered indicatorColor="secondary" value={false} onChange={handleChange} className='tbPostagem'>
-            <Tab className='sobre' label="Versions" value="1"/>
+            {/* <Tab className='sobre' label="Versions" value="1"/> */}
             <Tab className='sobre' label="Channel" value="2" />
           </Tabs>
 
         </AppBar>
 
         <TabPanel value="1">
-          <Box display="flex" flexWrap="wrap" justifyContent="center">
+          {/* <Box display="flex" flexWrap="wrap" justifyContent="center">
             <ListaPostagem />
-          </Box>
+          </Box> */}
         </TabPanel>
 
         <TabPanel value="2">

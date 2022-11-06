@@ -6,6 +6,9 @@
     color: white !important;
     text-align: center !important;
 }
+.sobre:hover{
+    color: rgb(32, 207, 207) !important;
+}
 
 .tbPostagem{
     background: linear-gradient(236deg, #2e2633 0%, #7e469e 20%, #2a1438 70%);
