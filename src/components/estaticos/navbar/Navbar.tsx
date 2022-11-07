@@ -77,13 +77,13 @@ function Navbar() {
                 </Link>
 
 
-                <Link to="/temas" className='cursor'>
+                {/* <Link to="/temas" className='cursor'>
                 <Box mx={1}>
                     <Typography variant="h6" color="inherit">
                         Temas
                     </Typography>
                 </Box>
-                </Link>
+                </Link> */}
 
 
                 <Link to="/formularioTema" className='cursor'>

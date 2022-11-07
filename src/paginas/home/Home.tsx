@@ -38,9 +38,7 @@ function Home() {
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center" className='bg-Home'>
 
-                <Grid alignItems="center" item xs={6}>
-
-                    <Box paddingX={20} >
+                <Grid alignItems="center" item md={6} sm={12} xs={12}>
 
                         <Typography 
                         variant="h3" 
@@ -61,8 +59,6 @@ function Home() {
                         className='titulo'>Qual a boa?
                         </Typography>
 
-                    </Box>
-
 
                     <Box display="flex" justifyContent="center">
 
@@ -79,7 +75,7 @@ function Home() {
                 </Grid>
 
 
-                <Grid item xs={6} className="logo"></Grid>
+                <Grid item md={6} sm={12} xs={12} className="logo"></Grid>
 
 
                 <Grid xs={12} className='postagens'>
