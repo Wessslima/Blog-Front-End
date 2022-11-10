@@ -1,3 +1,32 @@
+<div align="center">
+ <h1>WEST</h1>
+</div>
+<blockquote>Blog Pessoal</blockquote>
+
+- Projeto Generation Brasil
+
+<div align="center">
+       <img src="https://github.com/Wessslima/img/blob/main/fotosRead/Blog-West.png"/>
+       <br>
+       <br>
+       <p>Quer conferir o funcionamento na prática? <a href="https://westprado.netlify.app/">Clique aqui!</a></p>
+<br>
+<br>
+
+## Tecnologias Utilizadas
+<hr>
+
+<img align="center" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+<img align="center" height="45" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
+<img align="center" alt="HTML" height="45" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+<img align="center" alt="CSS" height="45" width="45" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+<br>
+<hr>
+<br>
+<br>
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
