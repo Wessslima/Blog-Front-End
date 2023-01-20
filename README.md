@@ -7,10 +7,10 @@
 
 <div align="center">
 O Site possui a capacidade de cadastrar usuários,
-onde os mesmos podem efetuar um<br>
+onde os mesmos podem realizar um<br>
 "CRUD" completo,
 ou seja, podem criar, visualizar, atualizar e 
-deletar eventuais postagens.
+deletar postagens.
 
 1 - As postagens são armazenadas em um banco de 
 dados relacional sendo ele o MySql.
@@ -20,7 +20,7 @@ utilizando o framework SpringBoot.<br>
 2.1) Deploy feito no Render.
 
 3 - Front-end desenvolvido na linguagem TypeScript,
-utilizando o React juntamente com<br>
+utilizando o ReactApp juntamente com<br>
 a biblioteca Material UI.<br>
 3.1) Deploy feito no Netlify.
 </div>
