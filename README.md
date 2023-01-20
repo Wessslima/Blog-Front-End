@@ -29,7 +29,7 @@ a biblioteca Material UI.<br>
        <img src="https://github.com/Wessslima/img/blob/main/fotosRead/Blog-West.png"/>
        <br>
        <br>
-       <p>Quer conferir? <a href="https://westprado.netlify.app/">Clique aqui!</a></p>
+       <p>Gostaria de conferir? <a href="https://westprado.netlify.app/">Clique aqui!</a></p>
 <br>
 <br>
 
