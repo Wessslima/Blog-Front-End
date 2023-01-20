@@ -5,21 +5,25 @@
 
 - Projeto Generation Brasil
 
+<div align="center">
 O Site possui a capacidade de cadastrar usuários,
-onde os mesmos podem efetuar um "CRUD" completo,
+onde os mesmos podem efetuar um<br>
+"CRUD" completo,
 ou seja, podem criar, visualizar, atualizar e 
 deletar eventuais postagens.
 
-1) As postagens são armazenadas em um banco de 
+1 - As postagens são armazenadas em um banco de 
 dados relacional sendo ele o MySql.
 
-2) O Back-end foi desenvolvido na linguagem Java,
+2 - O Back-end foi desenvolvido na linguagem Java,
 utilizando o framework SpringBoot.<br>
 2.1) Deploy feito no Render.
 
-3) Front-end desenvolvido na linguagem TypeScript,
-utilizando o React juntamente com a biblioteca Material UI.<br>
+3 - Front-end desenvolvido na linguagem TypeScript,
+utilizando o React juntamente com<br>
+a biblioteca Material UI.<br>
 3.1) Deploy feito no Netlify.
+</div>
 
 <div align="center">
        <img src="https://github.com/Wessslima/img/blob/main/fotosRead/Blog-West.png"/>
