@@ -3,7 +3,7 @@
 </div>
 <blockquote>Blog Pessoal</blockquote>
 
-- Projeto Generation Brasil
+- ⚠️ Projeto em Desenvolvimento 🚧
 
 <div align="center">
 O Site possui a capacidade de cadastrar usuários,
