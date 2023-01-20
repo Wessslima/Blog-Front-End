@@ -17,12 +17,12 @@ dados relacional sendo ele o MySql.
 
 2 - O Back-end foi desenvolvido na linguagem Java,
 utilizando o framework SpringBoot.<br>
-2.1) Deploy feito no Render.
+2.1 - Deploy feito no Render.
 
 3 - Front-end desenvolvido na linguagem TypeScript,
 utilizando o ReactApp juntamente com<br>
 a biblioteca Material UI.<br>
-3.1) Deploy feito no Netlify.
+3.1 - Deploy feito no Netlify.
 </div>
 
 <div align="center">
