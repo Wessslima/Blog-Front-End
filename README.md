@@ -3,7 +3,7 @@
 </div>
 <blockquote>Blog Pessoal</blockquote>
 
-- ⚠️ Projeto em Desenvolvimento 🚧
+- ⚠️ Projeto em Desenvolvimento ⚠️
 
 <div align="center">
 O Site possui a capacidade de cadastrar usuários,
@@ -16,20 +16,18 @@ deletar postagens.
 dados relacional sendo ele o MySql.
 
 2 - O Back-end foi desenvolvido na linguagem Java,
-utilizando o framework SpringBoot.<br>
-2.1 - Deploy feito no Render.
+utilizando o framework SpringBoot.
 
 3 - Front-end desenvolvido na linguagem TypeScript,
 utilizando o ReactApp juntamente com<br>
-a biblioteca Material UI.<br>
-3.1 - Deploy feito no Netlify.
+a biblioteca Material UI.
 </div>
 
 <div align="center">
        <img src="https://github.com/Wessslima/img/blob/main/fotosRead/Blog-West.png"/>
        <br>
        <br>
-       <p>Gostaria de conferir? <a href="https://westprado.netlify.app/">Clique aqui!</a></p>
+       <a href="https://westprado.netlify.app/">Clique aqui!</a>
 <br>
 <br>
 
